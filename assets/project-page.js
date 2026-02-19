@@ -5,35 +5,17 @@ const themeToggle = document.getElementById("themeToggle");
 const yearEl = document.getElementById("year");
 yearEl.textContent = new Date().getFullYear();
 
-// Theme (shared) — FIXED
-const themeLabel = document.getElementById("themeLabel");
-
-function updateThemeLabel(){
-  if (!themeLabel) return;
-  const current = document.documentElement.getAttribute("data-theme");
-  themeLabel.textContent = current === "light" ? "Dark" : "Light";
-}
-
+// Theme (shared)
 (function initTheme(){
   const saved = localStorage.getItem("theme");
-
-  if (saved === "light") {
-    document.documentElement.setAttribute("data-theme", "light");
-  } else {
-    document.documentElement.removeAttribute("data-theme");
-  }
-
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
   updateThemeLabel();
-
-  if (!themeToggle) return; // safety
 
   themeToggle.addEventListener("click", () => {
     const current = document.documentElement.getAttribute("data-theme");
     const next = current === "light" ? "" : "light";
-
-    if (next === "light") document.documentElement.setAttribute("data-theme", "light");
+    if (next) document.documentElement.setAttribute("data-theme", next);
     else document.documentElement.removeAttribute("data-theme");
-
     localStorage.setItem("theme", next || "");
     updateThemeLabel();
   });
