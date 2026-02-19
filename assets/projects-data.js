@@ -57,10 +57,10 @@ window.PROJECTS = [
     "Full renovation and interior execution of a fitness facility with a focus on performance standards and strong visual identity. The project included installation of specialized gym flooring, steel framework construction for pull-up bars and dumbbell stations, full-height mirror installation, gypsum board ceiling execution, design and fabrication of VIP and standard CNC-cut lockers, CNC decorative panels, motivational wall graphics, and complete repainting. The objective was to create a professional, dynamic, and motivating workout environment.",
   
   // 6 BEFORE images (.jpeg)
-  beforeImages: seqImages("../assets/projects/p3/before", "Before" , 6, "jpeg"),
+  beforeImages: seqImages("../assets/projects/p3/before", 6, "Before", "jpeg"),
 
   // 10 AFTER images (.jpg)
-  afterImages: seqImages("../assets/projects/p3/after", "After" , 10 , "jpg"),
+  afterImages: seqImages("../assets/projects/p3/after", 10, "After", "jpg"),
 
   // No final gallery (video-only section is hidden if no video)
   finalImages: [],
