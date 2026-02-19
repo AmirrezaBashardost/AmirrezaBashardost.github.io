@@ -447,3 +447,25 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   .gallery{ grid-template-columns: 40px 1fr 40px; }
   .gallery-single{ grid-template-columns: 40px 1fr 40px; }
 }
+/* =========================================================
+   FIX: Show full images (no cropping) across main + project pages
+   ========================================================= */
+
+/* Main page hero + about portrait */
+.hero-media img,
+.portrait img{
+  object-fit: contain !important;
+  background: rgba(255,255,255,.03);
+}
+
+/* Project page cover + galleries */
+#coverImg,
+#beforeImg,
+#afterImg,
+#finalImg,
+.gallery img,
+.gallery-single img{
+  object-fit: contain !important;
+  background: rgba(255,255,255,.03);
+}
+
