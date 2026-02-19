@@ -60,7 +60,7 @@ window.PROJECTS = [
   beforeImages: seqImages("../assets/projects/p3/before", 6, "Before", "jpeg"),
 
   // 10 AFTER images (.jpg)
-  afterImages: seqImages("../assets/projects/p3/after", 10, "After", "jpg"),
+  afterImages: seqImages("../assets/projects/p3/after", 10, "After", "JPG"),
 
   // No final gallery (video-only section is hidden if no video)
   finalImages: [],
