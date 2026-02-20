@@ -39,8 +39,8 @@ window.PROJECTS = [
     description: "…",
 
     beforeImages: seqImages("../assets/projects/p2/before", 9, "Before", "jpeg"),
-    afterImages:  seqImages("../assets/projects/p2/after",  2, "After"),
-    finalImages:  seqImages("../assets/projects/p2/final",  2, "Final"),
+    afterImages:  seqImages("../assets/projects/p2/after",  10, "After"),
+    finalImages:  seqImages("../assets/projects/p2/final",  1, "Final"),
 
     videoEmbed: "",
     videoFile: "../assets/projects/p2/video/walkthrough.mp4"
